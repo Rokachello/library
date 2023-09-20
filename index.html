@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <table>
+        <!-- here goes our data! -->
+        </table>
+        
+          <p>
+        <button id="showDialog">Add book + </button>
+          </p>
+    </div>
+  <dialog id="favDialog">
+    <form>
+        <p>
+            <label>
+                Book name:
+                <input type="text" id="inputName" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Author:
+                <input type="text" name="author" id="authorInput" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Pages:
+                <input type="number" name="number" id="pagesInput" pattern="[0-9]+" required>
+            </label>
+        </p>
+        <p>
+            <label>
+                Read:
+                <input type="checkbox" name="read" id="readInput">
+            </label>
+        </p>
+      <div>
+        <button id="cancelBtn" value="cancel" formmethod="dialog">Cancel</button>
+        <button id="confirmBtn" value="default">Confirm</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+
+</html>
