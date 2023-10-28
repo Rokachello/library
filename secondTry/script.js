@@ -7,18 +7,19 @@ let title = ""
 let author = ""
 let pages = ""
 
-
-
-function Book(title,author,pages,read){
-    this.title = title,
-    this.author = author,
-    this.pages = pages,
-    this.read = read,
-    this.info = function(){
+class Book{
+    constructor(title,author,pages,read){
+        this.title = title
+        this.author = author
+        this.pages = pages
+        this.read = read
+    }
+    info(){
     const isRead = (read) ? "read already" : "not read yet"    
     return `${title} by ${author}, ${pages} pages, ${isRead}`;
     }
 }
+
 
 // create 10 books using the Book constructor
 const newBook1 = new Book("The Hitchhiker's Guide to the Galaxy", "Douglas Adams", 216, true);

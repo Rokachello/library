@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(207, 226, 255);
+}
 table {
     border-collapse: separate;
     border-spacing: 0;
@@ -9,7 +12,7 @@ table {
     font-size: larger;
   }
   th {
-    background-color: #af1a10;
+    background-color: #15114d;
     color: #FFFFFF;
   }
   th, td {
@@ -59,3 +62,20 @@ table {
     background-color: #af1a10;
     color: #ddd;
   }
+
+  .book-card{
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  input:invalid {
+    border: 2px dashed red;
+  }
+  
+  input:valid {
+    border: 2px solid black;
+  }
+
+  

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -14,20 +14,19 @@
         <div class="modal">
             <div class="modal-content">
                 
-                <h1>Book info <span class="close-button">&times;</span></h1>
+                <h1>Book info <span class="close-button"></span></h1>
            <form action="#">
             <label for="title"> Book title:</label>
-            <input type="text" id="title" name="title"> <br>
+            <input type="text" id="title" name="title" required> <br>
             <label for="author"> Author name:</label>
-            <input type="text" id="author" name="author"> <br>
+            <input type="text" id="author" name="author" required> <br>
             <label for="pages"> Number of pages:</label>
-            <input type="text" id="pages" name="pages"> <br>
+            <input type="number" id="pages" name="pages" required value = "100" min="1" max="10000" step="1"> <br>
             <label for="isRead">Read status:</label>
-            <input type="checkbox" id="isRead" name="isRead"> <br>
+            <input type="checkbox" id="isRead" name="isRead" required> <br>
         </form>
         <button class="add-book"> Add book </button>   
            
-
             </div>
         </div>
 
